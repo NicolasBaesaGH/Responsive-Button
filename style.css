@@ -1,0 +1,83 @@
+body{
+    font-family: 'Sono', sans-serif;
+   color: white;  
+}
+html{
+    font-size: 12px;
+}
+.flex-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+
+    gap: 50px;
+    
+}
+
+.pricing-box{
+    background-color: #181428;
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 10px 2px #c8a2c8;
+    border-radius: 20px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-wrap: 250px;
+}
+
+h2{
+color: white;
+text-align: center;
+font-size: 2rem;
+}
+
+.Tier{
+    background: linear-gradient(90deg,#191825,#865DFF, #FFA3FD);
+    background-color: #e6e6fa;
+}
+
+h3{
+    text-align: center;
+    color: #FF7EED;
+    font-weight: 1000;
+    font-size: 2.2rem;
+    margin-top: -15px;
+}
+ul{
+    margin-top: -10px;
+}
+ul>p{
+    color: #FF7EED;
+    font-size: 1.2rem;
+}
+
+.sign-up{
+    margin: auto;
+    position: absolute;
+    margin-left: 6rem;
+    background: linear-gradient(90deg,#191825,#865DFF, #FFA3FD);
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    color: whitesmoke;
+}
+
+@media (max-width: 900px) {
+    .flex-div {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  .flex-div>*{
+    flex-grow: 0;    /* Prevents the item from growing */
+    flex-shrink: 0;  /* Prevents the item from shrinking */
+    flex-basis: auto;
+  }
+
+  .sign-up:hover{
+cursor: pointer;
+box-shadow: 2px 2px 10px 2px #c8a2c8;
+  }
